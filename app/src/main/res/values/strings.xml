@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">App Pengajuan Surat</string>
+    <string name="splash_text">Pengajuan Surat App</string>
+    <string name="detail_mhsaktif">Surat mahasiswa aktif merupakan surat yang diperlukan untuk melakukan berbagai aktifitas diluar kampus seperti pelatihan, beasiswa dan lainnya.\nUntuk membuat surat mahasiswa aktif dibutuhkan beberapa data yaitu,\n1. Nama, NIM\n2. Data Orangtua
+    </string>
+    <string name="detail_legalisir">Legalisir Ijazah merupakan proses resmi untuk mengesahkan dan memvalidasi keaslian ijazah yang dikeluarkan oleh politeknik.\nTujuan dari legalisasi ini adalah untuk memastikan bahwa ijazah yang diberikan oleh politeknik telah melewati proses pendidikan yang sah dan diakui oleh lembaga yang berwenang.</string>
+    <string name="detail_transkrip">Transkrip Nilai adalah dokumen resmi yang berisi daftar lengkap mata kuliah yang telah diambil oleh seorang mahasiswa selama masa studi di politeknik, beserta nilai yang diperoleh dalam setiap mata kuliah tersebut.\nTranskrip Nilai merupakan dokumen pendukung untuk memperlihatkan progress studi akademik mahasiswa</string>
+    <string name="instruksi_detail">Silahkan siapkan data anda terlebih dahulu. \nTekan "Ajukan" untuk mengisi Form Pengajuan Surat.</string>
+    <string name="detail_pengajuan">Jenis Permohonan: \nSurat Keterangan Mahasiswa Aktif\n\nData Pemohon: \n- Nama: Christian Roi Tua Sinaga\n- NIM: 2005181004\n- Kelas: TRPL-6A\n\nEstimasi: 2 hari\nStatus: Dikirim</string>
+
+</resources>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FormLegalisirActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="Form Legalisir Ijazah"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:textSize="20sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:text="Isilah Data Dibawah ini dengan Benar."
+            android:textStyle="bold"
+            android:textColor="@color/danger"
+            android:textSize="11sp"
+            tools:ignore="HardcodedText" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nama Lengkap"
+            android:textColor="#000"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/valNama"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text"
+            android:maxLines="1"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:hint="Masukkan Nama Lengkap Anda"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="NIM"
+            android:textColor="#000"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/valNim"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:inputType="text"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:hint="Masukkan NIM Anda"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Tempat dan Tanggal Lahir"
+            android:textColor="#000"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:id="@+id/namaAyah"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textFilter"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:hint="Masukkan TTL Anda (cth: Medan, 01 Januari 2000)"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Jurusan/Prodi"
+            android:textColor="#000"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textFilter"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:hint="Contoh (KI/TRPL)"
+            tools:ignore="Autofill,LabelFor" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Kelas"
+            android:textColor="#000"
+            android:textSize="14sp"
+            tools:ignore="HardcodedText" />
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:inputType="textFilter"
+            android:textColor="#000"
+            android:textSize="14sp"
+            android:hint="Masukkan Kelas Anda (contoh: TRPL-8A)"
+            tools:ignore="Autofill,LabelFor" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btDaftar"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/round_button"
+            android:text="Daftar"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btKembali"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/danger_button"
+            android:text="Kembali"
+            android:textColor="#FFF"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            tools:ignore="HardcodedText" />
+    </LinearLayout>
+
+</ScrollView>
