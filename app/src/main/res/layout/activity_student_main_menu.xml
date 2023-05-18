@@ -31,7 +31,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="5dp"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="8dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
@@ -46,15 +46,16 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@drawable/writing"/>
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="173dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
                         android:paddingLeft="5dp"
+                        android:text="Surat Mahasiswa Aktif"
                         android:textColor="@color/white"
-                        android:textStyle="bold"
-                        android:text="Surat Mahasiswa Aktif"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -66,7 +67,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="5dp"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="8dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
@@ -99,7 +100,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="5dp"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="8dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
@@ -159,7 +160,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="5dp"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="8dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
@@ -192,7 +193,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="5dp"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="8dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout

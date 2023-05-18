@@ -45,15 +45,16 @@
                         android:layout_width="50dp"
                         android:layout_height="50dp"
                         android:src="@drawable/writing"/>
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="175dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
                         android:paddingLeft="5dp"
+                        android:text="Surat Mahasiswa Aktif"
                         android:textColor="@color/white"
-                        android:textStyle="bold"
-                        android:text="Surat Mahasiswa Aktif"/>
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
