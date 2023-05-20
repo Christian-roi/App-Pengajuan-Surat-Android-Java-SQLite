@@ -130,7 +130,7 @@ tools:context=".FormMhsAktifActivity">
             android:maxLines="1"
             android:textColor="#000"
             android:textSize="14sp"
-            android:hint="Masukkan Kelas anda"
+            android:hint="Masukkan Kelas anda (contoh: TRPL-6A)"
             tools:ignore="Autofill,LabelFor" />
 
         <TextView

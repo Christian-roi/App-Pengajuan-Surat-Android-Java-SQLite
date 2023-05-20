@@ -33,6 +33,7 @@
         android:layout_height="wrap_content"
         android:textColor="#000"
         android:textSize="16sp"
+        android:text="Roi"
         tools:ignore="HardcodedText" />
 
     <TextView
@@ -49,7 +50,7 @@
         android:id="@+id/txtUserid"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Test"
+        android:text="2001810"
         android:textColor="#000"
         android:textSize="16sp"
         tools:ignore="HardcodedText" />
@@ -70,6 +71,7 @@
         android:layout_height="wrap_content"
         android:textColor="#000"
         android:textSize="16sp"
+        android:text="Laki-laki/Perempuan"
         tools:ignore="HardcodedText" />
 
     <androidx.appcompat.widget.AppCompatButton

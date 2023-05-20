@@ -49,7 +49,7 @@
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
-                android:hint="Status"
+                android:hint="Status:"
                 android:textAlignment="textStart" />
             <TextView
                 android:id="@+id/tglPengajuan"
@@ -58,7 +58,7 @@
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
-                android:hint="Nama"
+                android:hint="Waktu Pengajuan:"
                 android:textAlignment="textStart" />
             <TextView
                 android:id="@+id/estimasi"
@@ -76,7 +76,7 @@
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
-                android:hint="Nama"
+                android:hint="Nama:"
                 android:textAlignment="textStart" />
             <TextView
                 android:id="@+id/nim"
@@ -85,7 +85,7 @@
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
-                android:hint="Nama"
+                android:hint="NIM:"
                 android:textAlignment="textStart" />
             <TextView
                 android:id="@+id/jurusan"
@@ -94,7 +94,7 @@
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
-                android:hint="Nama"
+                android:hint="Jurusan/Prodi:"
                 android:textAlignment="textStart" />
             <TextView
                 android:id="@+id/kelas"
@@ -103,7 +103,7 @@
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
-                android:hint="Nama"
+                android:hint="Kelas:"
                 android:textAlignment="textStart" />
 
 

@@ -67,13 +67,14 @@
                 android:textStyle="bold"
                 android:textSize="16sp"
                 tools:ignore="HardcodedText" />
+
             <TextView
                 android:id="@+id/valNim"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="Nama Lengkap"
+                android:text="NIM"
                 android:textColor="#000"
                 android:textSize="14sp"
                 tools:ignore="HardcodedText" />
@@ -92,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="Nama Lengkap"
+                android:text="Tempat/Tanggal Lahir"
                 android:textColor="#000"
                 android:textSize="14sp"
                 tools:ignore="HardcodedText" />
@@ -111,7 +112,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="Nama Lengkap"
+                android:text="Jurusan/Prodi"
                 android:textColor="#000"
                 android:textSize="14sp"
                 tools:ignore="HardcodedText" />
@@ -130,7 +131,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="Nama Lengkap"
+                android:text="Semester"
                 android:textColor="#000"
                 android:textSize="14sp"
                 tools:ignore="HardcodedText" />
@@ -149,7 +150,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="Nama Lengkap"
+                android:text="Kelas"
                 android:textColor="#000"
                 android:textSize="14sp"
                 tools:ignore="HardcodedText" />
@@ -180,7 +181,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="Nama Lengkap"
+                android:text="Waktu Pengajuan"
                 android:textColor="#000"
                 android:textSize="14sp"
                 tools:ignore="HardcodedText" />
@@ -199,7 +200,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="5dp"
                 android:layout_marginBottom="10dp"
-                android:text="Nama Lengkap"
+                android:text="Status"
                 android:textColor="#000"
                 android:textSize="14sp"
                 tools:ignore="HardcodedText" />
