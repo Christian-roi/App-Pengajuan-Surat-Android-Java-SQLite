@@ -31,7 +31,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="5dp"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="8dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
@@ -39,19 +39,23 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center_horizontal"
+                    android:background="@drawable/button_surat2"
                     android:padding="18dp">
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/suratico"/>
+                        android:src="@drawable/writing"/>
+
                     <TextView
-                        android:layout_width="wrap_content"
+                        android:layout_width="173dp"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:gravity="center"
                         android:paddingLeft="5dp"
-                        android:text="Surat Mahasiswa Aktif"/>
+                        android:text="Surat Mahasiswa Aktif"
+                        android:textColor="@color/white"
+                        android:textStyle="bold" />
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
@@ -63,7 +67,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="5dp"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="8dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
@@ -71,17 +75,20 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center_horizontal"
+                    android:background="@drawable/button_surat4"
                     android:padding="18dp">
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/suratico"/>
+                        android:src="@drawable/writing"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:paddingLeft="5dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
                         android:text="Transkrip Nilai"/>
                 </LinearLayout>
 
@@ -93,7 +100,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="5dp"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="8dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
@@ -101,17 +108,20 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center_horizontal"
+                    android:background="@drawable/button_surat3"
                     android:padding="18dp">
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/suratico"/>
+                        android:src="@drawable/writing"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:paddingLeft="5dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
                         android:text="Legalisir Ijazah"/>
                 </LinearLayout>
 
@@ -150,7 +160,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="5dp"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="8dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
@@ -158,17 +168,20 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center_horizontal"
+                    android:background="@drawable/button_surat5"
                     android:padding="18dp">
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/suratico"/>
+                        android:src="@drawable/writing"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:paddingLeft="5dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
                         android:text="Pengajuan Saya"/>
                 </LinearLayout>
 
@@ -180,7 +193,7 @@
                 android:layout_columnWeight="1"
                 android:layout_rowWeight="1"
                 app:cardElevation="5dp"
-                app:cardCornerRadius="5dp"
+                app:cardCornerRadius="8dp"
                 app:cardUseCompatPadding="true">
 
                 <LinearLayout
@@ -188,17 +201,20 @@
                     android:layout_height="wrap_content"
                     android:orientation="vertical"
                     android:gravity="center_horizontal"
+                    android:background="@drawable/button_surat6"
                     android:padding="18dp">
 
                     <ImageView
                         android:layout_width="50dp"
                         android:layout_height="50dp"
-                        android:src="@drawable/suratico"/>
+                        android:src="@drawable/user"/>
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
-                        android:paddingLeft="5dp"
+                        android:paddingLeft="2dp"
+                        android:textColor="@color/white"
+                        android:textStyle="bold"
                         android:text="Profil"/>
                 </LinearLayout>
 
