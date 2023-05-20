@@ -1,18 +1,12 @@
 package com.example.apppengajuansurat;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
 
 import android.content.Intent;
-import android.database.Cursor;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Adapter;
 import android.widget.AdapterView;
-import android.widget.Button;
 import android.widget.ListView;
-import android.widget.Toast;
 
 import com.example.apppengajuansurat.adapter.MhsAktifAdapter;
 import com.example.apppengajuansurat.model.DataFormMhsAktif;
@@ -22,7 +16,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 
-public class PengajuanListActivity extends AppCompatActivity {
+public class AdminSMAListActivity extends AppCompatActivity {
 
     ListView listView;
     List<DataFormMhsAktif> lists = new ArrayList<>();
@@ -33,30 +27,33 @@ public class PengajuanListActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pengajuan_list);
+        setContentView(R.layout.activity_admin_smalist);
+
         db = new DatabaseHelper(this);
         listView = findViewById(R.id.list_item);
         kembali = findViewById(R.id.fab);
 
-        adapter = new MhsAktifAdapter(PengajuanListActivity.this, lists);
+        adapter = new MhsAktifAdapter(AdminSMAListActivity.this, lists);
         listView.setAdapter(adapter);
         getData();
+
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long id) {
                 String idx = lists.get(position).getId();
 
-                Intent intent = new Intent(PengajuanListActivity.this, DetailPengajuanActivity.class);
+                Intent intent = new Intent(AdminSMAListActivity.this, DetailAdminActvity.class);
                 intent.putExtra("id",Integer.parseInt(idx));
 
                 startActivity(intent);
             }
         });
 
+
         kembali.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent backToMenu = new Intent(PengajuanListActivity.this, MenuListActivity.class);
+                Intent backToMenu = new Intent(AdminSMAListActivity.this, AdminMainMenuActivity.class);
                 startActivity(backToMenu);
                 finish();
             }
@@ -64,12 +61,11 @@ public class PengajuanListActivity extends AppCompatActivity {
     }
 
     private void getData(){
-        String savedUserID = db.getLoggedInUserId();
-        ArrayList<HashMap<String, String>> rows = db.getFormMhsAktifByNim(savedUserID);
+        ArrayList<HashMap<String, String>> rows = db.getAllFormMhsAktif();
         for (int i = 0; i<rows.size(); i++){
             String id = rows.get(i).get("id");
-            String nim = rows.get(i).get("nim");
             String status = rows.get(i).get("status");
+            String nim = rows.get(i).get("nim");
             DataFormMhsAktif data = new DataFormMhsAktif();
             data.setId(id);
             data.setNim(nim);
@@ -78,6 +74,7 @@ public class PengajuanListActivity extends AppCompatActivity {
         }
         adapter.notifyDataSetChanged();
     }
+
     @Override
     protected void onResume() {
         super.onResume();

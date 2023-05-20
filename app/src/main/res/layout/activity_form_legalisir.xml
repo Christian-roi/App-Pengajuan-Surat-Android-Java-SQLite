@@ -78,7 +78,7 @@
             android:textSize="14sp"
             tools:ignore="HardcodedText" />
         <EditText
-            android:id="@+id/namaAyah"
+            android:id="@+id/valTtl"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="5dp"
@@ -97,6 +97,7 @@
             android:textSize="14sp"
             tools:ignore="HardcodedText" />
         <EditText
+            android:id="@+id/valJurusan"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="5dp"
@@ -115,6 +116,7 @@
             android:textSize="14sp"
             tools:ignore="HardcodedText" />
         <EditText
+            android:id="@+id/valKelas"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="5dp"

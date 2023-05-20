@@ -57,6 +57,27 @@ public class FormMhsAktifActivity extends AppCompatActivity {
                 String valPekerjaan = pekerjaan.getText().toString();
                 String valInstansi = instansi.getText().toString();
                 String valAlamatOrtu = alamat_ortu.getText().toString();
+
+                if(valNama.trim().isEmpty() || valNim.trim().isEmpty() || valTtl.trim().isEmpty()
+                   || valJurusan.trim().isEmpty() || valKelas.trim().isEmpty() || valAlamat.trim().isEmpty()
+                   || valNamaOrtu.trim().isEmpty() || valPekerjaan.trim().isEmpty() || valInstansi.trim().isEmpty()
+                   || valAlamatOrtu.trim().isEmpty()){
+                    Toast.makeText(FormMhsAktifActivity.this, "Harap Isi Data dengan Baik dan Benar!", Toast.LENGTH_SHORT).show();
+                }else{
+                    if(valNim.equals(userData.getValueUserid())){
+                        Boolean dataMasuk = db.insertFormMahasiswaAktif(valNama, valNim, valTtl, valJurusan, valKelas, valAlamat, valNamaOrtu, valPekerjaan, valInstansi,valAlamatOrtu);
+                        if(dataMasuk == true){
+                            Toast.makeText(FormMhsAktifActivity.this, "Form Surat Mahasiswa Aktif telah dikirim", Toast.LENGTH_SHORT).show();
+                            Intent resultIntent = new Intent(FormMhsAktifActivity.this, PengajuanListActivity.class);
+                            startActivity(resultIntent);
+                            finish();
+                        }else{
+                            Toast.makeText(FormMhsAktifActivity.this, "Form Gagal", Toast.LENGTH_SHORT).show();
+                        }
+                    }else{
+                        Toast.makeText(FormMhsAktifActivity.this, "NIM Anda tidak sama dengan Profil\nHarap Masukkan NIM anda sendiri", Toast.LENGTH_SHORT).show();
+                    }
+                }
             }
         });
 

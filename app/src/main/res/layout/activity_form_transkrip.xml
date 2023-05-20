@@ -77,7 +77,7 @@
             android:textSize="14sp"
             tools:ignore="HardcodedText" />
         <EditText
-            android:id="@+id/namaAyah"
+            android:id="@+id/valTtl"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="5dp"
@@ -96,6 +96,7 @@
             android:textSize="14sp"
             tools:ignore="HardcodedText" />
         <EditText
+            android:id="@+id/valSemester"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="5dp"
@@ -114,6 +115,7 @@
             android:textSize="14sp"
             tools:ignore="HardcodedText" />
         <EditText
+            android:id="@+id/valJurusan"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="5dp"
@@ -132,13 +134,14 @@
             android:textSize="14sp"
             tools:ignore="HardcodedText" />
         <EditText
+            android:id="@+id/valKelas"
             android:layout_width="match_parent"
             android:layout_height="40dp"
             android:layout_marginTop="5dp"
             android:inputType="textFilter"
             android:textColor="#000"
             android:textSize="14sp"
-            android:hint="Masukkan Kelas Anda (contoh: TRPL-8A)"
+            android:hint="Masukkan Kelas Anda (contoh: TRPL-6A)"
             tools:ignore="Autofill,LabelFor" />
 
         <androidx.appcompat.widget.AppCompatButton

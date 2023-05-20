@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -11,6 +14,36 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppPengajuanSurat"
         tools:targetApi="31">
+        <activity
+            android:name=".AdminLegDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTransDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminLegListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminTransListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AdminSMAListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentLegalisirDetailListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentLegalisirListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentTranskripDetailListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StudentTranskripListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MenuListActivity"
+            android:exported="false" />
         <activity
             android:name=".FormTranskripActivity"
             android:exported="false" />

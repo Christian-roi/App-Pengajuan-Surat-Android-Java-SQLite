@@ -8,22 +8,29 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.database.Cursor;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.apppengajuansurat.adapter.LegalisirAdapter;
+import com.example.apppengajuansurat.model.DataFormLegalisir;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Locale;
 
-public class DetailPengajuanActivity extends AppCompatActivity {
+public class StudentLegalisirDetailListActivity extends AppCompatActivity {
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail_pengajuan);
+        setContentView(R.layout.activity_student_legalisir_detail_list);
 
         DatabaseHelper db = new DatabaseHelper(this);
         Button batal = findViewById(R.id.btBatal);
@@ -37,12 +44,12 @@ public class DetailPengajuanActivity extends AppCompatActivity {
         TextView kelas = findViewById(R.id.kelas);
 
         int idx = getIntent().getIntExtra("id", 0);
-        String query = "SELECT * FROM form_mhs_aktif WHERE id = " +idx;
+        String query = "SELECT * FROM form_legalisir WHERE id = " +idx;
         Cursor cursor = db.getReadableDatabase().rawQuery(query, null);
         if(cursor.moveToFirst()){
             do{
                 //Value
-                String valNama = cursor.getString(cursor.getColumnIndexOrThrow("nama"));
+                String valNama = cursor.getString(cursor.getColumnIndexOrThrow("nama_mhs"));
                 String valStatus = cursor.getString(cursor.getColumnIndexOrThrow("status"));
                 String valNim = cursor.getString(cursor.getColumnIndexOrThrow("nim"));
                 String valJurusan = cursor.getString(cursor.getColumnIndexOrThrow("jurusan"));
@@ -64,15 +71,14 @@ public class DetailPengajuanActivity extends AppCompatActivity {
                     ambil.setVisibility(View.VISIBLE);
                     batal.setVisibility(View.GONE);
                 }else{
-                    ambil.setVisibility(View.GONE);
+                    ambil.setVisibility(View.VISIBLE);
                     batal.setVisibility(View.GONE);
                 }
             }while(cursor.moveToNext());
 
         }
-        id.setText("Form Pengajuan SMA/0"+String.valueOf(idx));
+        id.setText("Form Pengajuan TNA/0"+String.valueOf(idx));
 
-        //Batalkan data
         batal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -90,7 +96,7 @@ public class DetailPengajuanActivity extends AppCompatActivity {
         kembali.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent result = new Intent(DetailPengajuanActivity.this, PengajuanListActivity.class);
+                Intent result = new Intent(StudentLegalisirDetailListActivity.this, StudentLegalisirListActivity.class);
                 startActivity(result);
                 finish();
             }
@@ -163,10 +169,10 @@ public class DetailPengajuanActivity extends AppCompatActivity {
         DatabaseHelper db = new DatabaseHelper(this);
         int idx = getIntent().getIntExtra("id", 0);
         String idValue = String.valueOf(idx);
-        db.getWritableDatabase().delete("form_mhs_aktif","id = ?", new String[]{idValue});
+        db.getWritableDatabase().delete("form_legalisir", "id = ?", new String[]{idValue});
         db.close();
         Toast.makeText(getApplicationContext(), "Pengajuan Dibatalkan", Toast.LENGTH_SHORT).show();
-        Intent result = new Intent(DetailPengajuanActivity.this, PengajuanListActivity.class);
+        Intent result = new Intent(this, StudentLegalisirListActivity.class);
         startActivity(result);
         finish();
     }
@@ -178,10 +184,10 @@ public class DetailPengajuanActivity extends AppCompatActivity {
         String statusValue = "Sudah Diambil";
         ContentValues values = new ContentValues();
         values.put("status", statusValue);
-        db.getWritableDatabase().update("form_mhs_aktif", values, "id = ?", new String[]{idValue});
+        db.getWritableDatabase().update("form_legalisir", values, "id = ?", new String[]{idValue});
         db.close();
         Toast.makeText(getApplicationContext(), "Proses Dokumen Sudah Selesai", Toast.LENGTH_SHORT).show();
-        Intent result = new Intent(DetailPengajuanActivity.this, PengajuanListActivity.class);
+        Intent result = new Intent(this, StudentLegalisirListActivity.class);
         startActivity(result);
         finish();
     }

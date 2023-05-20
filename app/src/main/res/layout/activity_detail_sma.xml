@@ -30,7 +30,6 @@ tools:context=".DetailSMAActivity">
           android:textSize="22sp"
           android:textStyle="bold"
           android:layout_marginTop="10dp"
-
           android:text="Surat Keterangan Mahasiswa Aktif"/>
 
       <TextView
@@ -47,14 +46,14 @@ tools:context=".DetailSMAActivity">
           android:layout_height="wrap_content"
           android:textSize="20sp"
           android:textStyle="bold"
-          android:layout_marginTop="50dp"
+          android:layout_marginTop="20dp"
           android:text="@string/instruksi_detail"/>
 
       <androidx.appcompat.widget.AppCompatButton
           android:id="@+id/btAjukan"
           android:layout_width="match_parent"
           android:layout_height="40dp"
-          android:layout_marginTop="20dp"
+          android:layout_marginTop="5dp"
           android:background="@drawable/round_button"
           android:text="Ajukan"
           android:textColor="#FFF"

@@ -6,6 +6,8 @@
     android:orientation="horizontal"
     android:padding="16dp">
 
+
+
     <ImageView
         android:layout_width="75dp"
         android:layout_height="75dp"
@@ -18,12 +20,13 @@
         android:paddingLeft="5dp"
         android:orientation="vertical">
 
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/pengajuan"
+            android:id="@+id/noPengajuan"
             android:text="Pengajuan 001"
-            android:textSize="20sp"
+            android:textSize="16sp"
             android:textStyle="bold"
             android:layout_margin="2dp"/>
 
@@ -35,13 +38,24 @@
             android:textSize="14sp"
             android:layout_margin="2dp"/>
 
-        <TextView
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/status"
-            android:text="Status: Dikirim "
-            android:textSize="14sp"
-            android:layout_margin="2dp"/>
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Status:"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_margin="2dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/status"
+                android:textSize="14sp"
+                android:layout_margin="2dp"/>
+        </LinearLayout>
 
     </LinearLayout>
 

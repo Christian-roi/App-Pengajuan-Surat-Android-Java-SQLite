@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".DetailPengajuanActivity">
+    tools:context=".StudentLegalisirDetailListActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -38,7 +38,7 @@
                 android:textSize="20sp"
                 android:layout_marginTop="10dp"
                 android:layout_marginLeft="5dp"
-                android:text="Surat Mahasiswa Aktif"
+                android:text="Legalisir Ijazah"
                 android:textStyle="bold"
                 android:textAlignment="textStart" />
 
@@ -108,24 +108,24 @@
 
 
             <androidx.appcompat.widget.AppCompatButton
-                android:id="@+id/btAmbil"
-                android:layout_width="match_parent"
-                android:layout_height="40dp"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/round_button"
-                android:text="Dokumen Diterima"
-                android:textColor="#FFF"
-                android:textSize="16sp"
-                android:textStyle="bold"
-                tools:ignore="HardcodedText" />
-
-            <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/btBatal"
                 android:layout_width="match_parent"
                 android:layout_height="40dp"
                 android:layout_marginTop="20dp"
                 android:background="@drawable/round_button"
                 android:text="Batalkan pengajuan"
+                android:textColor="#FFF"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btAmbil"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/round_button"
+                android:text="Dokumen Diterima"
                 android:textColor="#FFF"
                 android:textSize="16sp"
                 android:textStyle="bold"
