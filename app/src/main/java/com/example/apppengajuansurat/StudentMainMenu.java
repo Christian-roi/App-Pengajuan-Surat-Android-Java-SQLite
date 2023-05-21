@@ -8,6 +8,7 @@ import androidx.core.app.NotificationCompat;
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
 import android.app.PendingIntent;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Color;
@@ -40,8 +41,6 @@ public class StudentMainMenu extends AppCompatActivity {
         logout = (Button) findViewById(R.id.btLogout);
         String savedUserID = db.getLoggedInUserId();
 
-        showAlertSelesai();
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(
                     CHANNEL_ID,
@@ -56,6 +55,9 @@ public class StudentMainMenu extends AppCompatActivity {
             notificationManager.createNotificationChannel(channel);
         }
 
+        //Alert untuk dokumen selesai
+        showAlertSelesai();
+        //Untuk notifikasi pengajuan telah diproses namun akan di disable ketika di Real Device
         showNotificationProses();
 
         // Cek session

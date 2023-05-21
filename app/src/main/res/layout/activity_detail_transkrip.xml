@@ -27,6 +27,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="22sp"
+                android:textColor="#000"
                 android:textStyle="bold"
                 android:layout_marginTop="10dp"
                 android:text="Transkrip Nilai"/>
@@ -36,6 +37,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
+                android:textColor="#000"
                 android:layout_marginLeft="5dp"
                 android:textAlignment="textStart"
                 android:text="@string/detail_transkrip"/>
@@ -45,6 +47,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:textColor="#000"
                 android:layout_marginTop="40dp"
                 android:text="@string/instruksi_detail"/>
 

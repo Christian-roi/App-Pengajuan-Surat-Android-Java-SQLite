@@ -81,4 +81,11 @@ public class StudentTranskripListActivity extends AppCompatActivity {
         lists.clear();
         getData();
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent backToMenu = new Intent(StudentTranskripListActivity.this, MenuListActivity.class);
+        startActivity(backToMenu);
+        finish();
+    }
 }

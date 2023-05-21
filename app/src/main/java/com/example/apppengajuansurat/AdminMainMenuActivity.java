@@ -39,8 +39,6 @@ public class AdminMainMenuActivity extends AppCompatActivity {
         btnProfile = findViewById(R.id.btnProfile);
         logout = (Button) findViewById(R.id.btLogout);
 
-        //showAlertProgress();
-
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.O) {
             NotificationChannel channel = new NotificationChannel(
                     CHANNEL_ID,
@@ -55,6 +53,9 @@ public class AdminMainMenuActivity extends AppCompatActivity {
             notificationManager.createNotificationChannel(channel);
         }
 
+        //Alert untuk ganti notifikasi di Real Device
+        showAlertProgress();
+        //Notifikasi untuk Emulator
         showNotificationMasuk();
 
         //Profile
@@ -148,14 +149,15 @@ public class AdminMainMenuActivity extends AppCompatActivity {
         if(total == 0){
         }else{
             Intent intent = new Intent(this, AdminMainMenuActivity.class);
-            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
-            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, 0);
+            intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+            PendingIntent pendingIntent = PendingIntent.getActivity(this, 0, intent, PendingIntent.FLAG_ONE_SHOT);
             NotificationCompat.Builder builder = new NotificationCompat.Builder(this, CHANNEL_ID)
                     .setSmallIcon(R.drawable.doc)
                     .setContentTitle("Notifikasi Pengajuan Masuk")
                     .setContentText(total+ " Pengajuan masuk dan perlu diverifikasi dan diproses.")
                     .setPriority(NotificationCompat.PRIORITY_DEFAULT)
-                    .setContentIntent(pendingIntent);
+                    .setContentIntent(pendingIntent)
+                    .setAutoCancel(true);
 
             NotificationManager notificationManager = null;
             if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.M) {

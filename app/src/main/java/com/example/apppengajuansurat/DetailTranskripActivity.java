@@ -37,4 +37,11 @@ public class DetailTranskripActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent menuUtama = new Intent(DetailTranskripActivity.this, StudentMainMenu.class);
+        startActivity(menuUtama);
+        finish();
+    }
 }

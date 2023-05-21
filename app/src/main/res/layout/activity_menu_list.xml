@@ -53,6 +53,7 @@
                         android:layout_marginTop="15dp"
                         android:gravity="center"
                         android:paddingLeft="5dp"
+                        android:textSize="13dp"
                         android:text="Surat Mahasiswa Aktif"
                         android:textColor="@color/white"
                         android:textStyle="bold" />
@@ -87,6 +88,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:paddingLeft="5dp"
+                        android:textSize="13dp"
                         android:textColor="@color/white"
                         android:textStyle="bold"
                         android:text="Transkrip Nilai"/>
@@ -120,6 +122,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:paddingLeft="5dp"
+                        android:textSize="13dp"
                         android:textColor="@color/white"
                         android:textStyle="bold"
                         android:text="Legalisir Ijazah"/>
@@ -153,6 +156,7 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="15dp"
                         android:paddingLeft="5dp"
+                        android:textSize="13dp"
                         android:textColor="@color/white"
                         android:textStyle="bold"
                         android:text="Kembali ke Home"/>

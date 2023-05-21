@@ -19,7 +19,6 @@
         android:src="@drawable/logo"
         tools:ignore="ContentDescription" />
 
-
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"

@@ -53,6 +53,20 @@ public class ProfileActivity extends AppCompatActivity {
                 }
             }
         });
+    }
 
+    @Override
+    public void onBackPressed() {
+        String savedUserID = db.getLoggedInUserId();
+        String role = db.checkRole(savedUserID);
+        if("mahasiswa".equals(role)){
+            Intent studentMenuIntent = new Intent(ProfileActivity.this, StudentMainMenu.class);
+            startActivity(studentMenuIntent);
+            finish();
+        }else {
+            Intent adminMenuIntent = new Intent(ProfileActivity.this, AdminMainMenuActivity.class);
+            startActivity(adminMenuIntent);
+            finish();
+        }
     }
 }

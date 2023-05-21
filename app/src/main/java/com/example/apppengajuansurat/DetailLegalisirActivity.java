@@ -37,4 +37,11 @@ public class DetailLegalisirActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent menuUtama = new Intent(DetailLegalisirActivity.this, StudentMainMenu.class);
+        startActivity(menuUtama);
+        finish();
+    }
 }

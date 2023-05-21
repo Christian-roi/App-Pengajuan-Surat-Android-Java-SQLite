@@ -1,5 +1,6 @@
 <resources>
-    <string name="app_name">App Pengajuan Surat</string>
+    <string name="app_name">DokAkad</string>
+    <string name="app_title">Pelayanan Dokumen Akademik</string>
     <string name="splash_text">Pengajuan Surat App</string>
     <string name="detail_mhsaktif">Surat mahasiswa aktif merupakan surat yang diperlukan untuk melakukan berbagai aktifitas diluar kampus seperti pelatihan, beasiswa dan lainnya.\nUntuk membuat surat mahasiswa aktif dibutuhkan beberapa data yaitu,\n1. Nama, NIM\n2. Data Orangtua
     </string>

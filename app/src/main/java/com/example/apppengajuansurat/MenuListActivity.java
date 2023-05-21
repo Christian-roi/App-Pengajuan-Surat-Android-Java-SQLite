@@ -59,4 +59,11 @@ public class MenuListActivity extends AppCompatActivity {
         });
 
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent home = new Intent(MenuListActivity.this, StudentMainMenu.class);
+        startActivity(home);
+        finish();
+    }
 }

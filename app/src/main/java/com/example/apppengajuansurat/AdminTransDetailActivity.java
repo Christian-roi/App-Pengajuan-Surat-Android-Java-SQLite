@@ -209,4 +209,11 @@ public class AdminTransDetailActivity extends AppCompatActivity {
         startActivity(result);
         finish();
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent back = new Intent(getApplicationContext(), AdminTransListActivity.class);
+        startActivity(back);
+        finish();
+    }
 }

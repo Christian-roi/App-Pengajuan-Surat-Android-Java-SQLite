@@ -191,4 +191,11 @@ public class StudentLegalisirDetailListActivity extends AppCompatActivity {
         startActivity(result);
         finish();
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent result = new Intent(StudentLegalisirDetailListActivity.this, StudentLegalisirListActivity.class);
+        startActivity(result);
+        finish();
+    }
 }

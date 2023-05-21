@@ -17,13 +17,14 @@ public class DetailSMAActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_detail_sma);
+
         DatabaseHelper db = new DatabaseHelper(this);
 
         ajukan = findViewById(R.id.btAjukan);
         kembali = findViewById(R.id.btKembali);
 
         int count = db.getRowCount("form_mhs_aktif");
-        //jlh.setText("Jumalah Data: " +String.valueOf(count) + " Surat");
+
 
         ajukan.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -34,7 +35,6 @@ public class DetailSMAActivity extends AppCompatActivity {
             }
         });
 
-
         kembali.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -43,5 +43,13 @@ public class DetailSMAActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+    }
+
+    @Override
+    public void onBackPressed() {
+        Intent menuUtama = new Intent(DetailSMAActivity.this, StudentMainMenu.class);
+        startActivity(menuUtama);
+        finish();
     }
 }

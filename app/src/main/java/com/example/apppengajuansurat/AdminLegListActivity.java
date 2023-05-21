@@ -80,4 +80,11 @@ public class AdminLegListActivity extends AppCompatActivity {
         lists.clear();
         getData();
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent backToMenu = new Intent(AdminLegListActivity.this, AdminMainMenuActivity.class);
+        startActivity(backToMenu);
+        finish();
+    }
 }

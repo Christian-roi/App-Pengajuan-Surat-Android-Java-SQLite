@@ -81,4 +81,11 @@ public class AdminTransListActivity extends AppCompatActivity {
         lists.clear();
         getData();
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent backToMenu = new Intent(AdminTransListActivity.this, AdminMainMenuActivity.class);
+        startActivity(backToMenu);
+        finish();
+    }
 }

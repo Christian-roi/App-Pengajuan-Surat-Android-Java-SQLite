@@ -5,7 +5,7 @@ xmlns:tools="http://schemas.android.com/tools"
 xmlns:card_view="http://schemas.android.com/apk/res-auto"
 android:layout_width="match_parent"
 android:layout_height="match_parent"
-    android:background="@color/white"
+android:background="@color/white"
 tools:context=".DetailSMAActivity">
 
 <LinearLayout
@@ -29,6 +29,7 @@ tools:context=".DetailSMAActivity">
           android:layout_height="wrap_content"
           android:textSize="22sp"
           android:textStyle="bold"
+          android:textColor="#000"
           android:layout_marginTop="10dp"
           android:text="Surat Keterangan Mahasiswa Aktif"/>
 
@@ -38,6 +39,7 @@ tools:context=".DetailSMAActivity">
           android:textSize="18sp"
           android:layout_marginTop="10dp"
           android:layout_marginLeft="5dp"
+          android:textColor="#000"
           android:textAlignment="textStart"
           android:text="@string/detail_mhsaktif"/>
 
@@ -46,6 +48,7 @@ tools:context=".DetailSMAActivity">
           android:layout_height="wrap_content"
           android:textSize="20sp"
           android:textStyle="bold"
+          android:textColor="#000"
           android:layout_marginTop="20dp"
           android:text="@string/instruksi_detail"/>
 

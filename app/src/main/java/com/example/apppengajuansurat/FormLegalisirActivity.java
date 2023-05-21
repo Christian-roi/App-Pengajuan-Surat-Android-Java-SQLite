@@ -79,4 +79,11 @@ public class FormLegalisirActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent kembali = new Intent(FormLegalisirActivity.this, DetailLegalisirActivity.class);
+        startActivity(kembali);
+        finish();
+    }
 }

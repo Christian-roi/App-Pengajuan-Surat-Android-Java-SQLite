@@ -185,4 +185,11 @@ public class DetailPengajuanActivity extends AppCompatActivity {
         startActivity(result);
         finish();
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent result = new Intent(DetailPengajuanActivity.this, PengajuanListActivity.class);
+        startActivity(result);
+        finish();
+    }
 }

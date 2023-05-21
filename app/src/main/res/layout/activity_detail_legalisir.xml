@@ -27,6 +27,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="22sp"
                 android:textStyle="bold"
+                android:textColor="#000"
                 android:layout_marginTop="10dp"
                 android:text="Legalisir Ijazah"/>
 
@@ -35,7 +36,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="18sp"
                 android:layout_marginTop="10dp"
-
+                android:textColor="#000"
                 android:textAlignment="textStart"
                 android:text="@string/detail_legalisir"/>
 
@@ -44,6 +45,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
                 android:textStyle="bold"
+                android:textColor="#000"
                 android:layout_marginTop="40dp"
                 android:text="@string/instruksi_detail"/>
 

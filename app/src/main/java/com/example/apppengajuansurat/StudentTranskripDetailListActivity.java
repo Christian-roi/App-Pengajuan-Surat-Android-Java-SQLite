@@ -185,4 +185,11 @@ public class StudentTranskripDetailListActivity extends AppCompatActivity {
         startActivity(result);
         finish();
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent result = new Intent(StudentTranskripDetailListActivity.this, StudentTranskripListActivity.class);
+        startActivity(result);
+        finish();
+    }
 }

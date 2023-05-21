@@ -82,4 +82,11 @@ public class FormTranskripActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent kembali = new Intent(FormTranskripActivity.this, DetailTranskripActivity.class);
+        startActivity(kembali);
+        finish();
+    }
 }

@@ -205,4 +205,11 @@ public class AdminLegDetailActivity extends AppCompatActivity {
         startActivity(result);
         finish();
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent back = new Intent(getApplicationContext(), AdminLegListActivity.class);
+        startActivity(back);
+        finish();
+    }
 }

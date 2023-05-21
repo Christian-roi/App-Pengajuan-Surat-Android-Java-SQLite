@@ -84,4 +84,11 @@ public class PengajuanListActivity extends AppCompatActivity {
         lists.clear();
         getData();
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent backToMenu = new Intent(PengajuanListActivity.this, MenuListActivity.class);
+        startActivity(backToMenu);
+        finish();
+    }
 }

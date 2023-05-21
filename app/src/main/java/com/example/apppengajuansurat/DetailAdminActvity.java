@@ -229,4 +229,11 @@ public class DetailAdminActvity extends AppCompatActivity {
         startActivity(result);
         finish();
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent back = new Intent(getApplicationContext(), AdminSMAListActivity.class);
+        startActivity(back);
+        finish();
+    }
 }

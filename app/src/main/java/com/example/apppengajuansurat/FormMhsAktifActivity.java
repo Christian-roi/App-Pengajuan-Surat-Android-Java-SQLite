@@ -91,4 +91,11 @@ public class FormMhsAktifActivity extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent kembali = new Intent(FormMhsAktifActivity.this, DetailSMAActivity.class);
+        startActivity(kembali);
+        finish();
+    }
 }

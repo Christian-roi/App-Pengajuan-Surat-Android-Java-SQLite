@@ -81,4 +81,11 @@ public class StudentLegalisirListActivity extends AppCompatActivity {
         lists.clear();
         getData();
     }
+
+    @Override
+    public void onBackPressed() {
+        Intent backToMenu = new Intent(StudentLegalisirListActivity.this, MenuListActivity.class);
+        startActivity(backToMenu);
+        finish();
+    }
 }
