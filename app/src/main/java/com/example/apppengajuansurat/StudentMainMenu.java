@@ -58,7 +58,7 @@ public class StudentMainMenu extends AppCompatActivity {
         //Alert untuk dokumen selesai
         showAlertSelesai();
         //Untuk notifikasi pengajuan telah diproses namun akan di disable ketika di Real Device
-        showNotificationProses();
+        //showNotificationProses();
 
         // Cek session
         Boolean cekSession = db.checkSession("ada");

@@ -56,7 +56,7 @@ public class AdminMainMenuActivity extends AppCompatActivity {
         //Alert untuk ganti notifikasi di Real Device
         showAlertProgress();
         //Notifikasi untuk Emulator
-        showNotificationMasuk();
+        //showNotificationMasuk();
 
         //Profile
         btnProfile.setOnClickListener(new View.OnClickListener() {
